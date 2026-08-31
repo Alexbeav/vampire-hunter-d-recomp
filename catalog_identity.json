@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Vampire Hunter D",
+    "id": "SLUS-01138",
+    "boot_exe": "SLUS_011.38"
+  },
+  "marketing": {
+    "description": "A native recompilation setup host for Vampire Hunter D.",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "disc1.cue",
+    "bin_name": "disc1.bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 480090240,
+      "md5": "cd407c8ed63f6e1e69f95769946b32d0",
+      "sha1": "a4b43839e2abd4ac626434c801fbea0a09ab3f88",
+      "crc32": "3b3a7e3a"
+    },
+    "disc_fp": "f30858efc282aea81d220131d377cab2c2da43fa436264e035f3c184773e3816"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80083020",
+    "text_size": "0x00086000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 1296,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
